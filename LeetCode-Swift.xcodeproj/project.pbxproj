@@ -15,6 +15,8 @@
 		414EE7B222CA2E9A00B08066 /* SymmetricTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EE7B122CA2E9A00B08066 /* SymmetricTree.swift */; };
 		414EE7B522CAEDBE00B08066 /* MaximumDepthOfBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EE7B422CAEDBE00B08066 /* MaximumDepthOfBinaryTree.swift */; };
 		414EE7B722CAEDF500B08066 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EE7B622CAEDF500B08066 /* TreeNode.swift */; };
+		414EE7B922CAFB4C00B08066 /* BinaryTreeLevelOrderTraversalII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EE7B822CAFB4C00B08066 /* BinaryTreeLevelOrderTraversalII.swift */; };
+		415FA389230EB3D10077F878 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415FA388230EB3D10077F878 /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		414EE7B122CA2E9A00B08066 /* SymmetricTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricTree.swift; sourceTree = "<group>"; };
 		414EE7B422CAEDBE00B08066 /* MaximumDepthOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumDepthOfBinaryTree.swift; sourceTree = "<group>"; };
 		414EE7B622CAEDF500B08066 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		414EE7B822CAFB4C00B08066 /* BinaryTreeLevelOrderTraversalII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeLevelOrderTraversalII.swift; sourceTree = "<group>"; };
+		415FA388230EB3D10077F878 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		414EE79B22CA2DC400B08066 /* LeetCode-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				415FA385230EB3820077F878 /* LinkedList */,
 				414EE7B622CAEDF500B08066 /* TreeNode.swift */,
 				414EE7B022CA2E8500B08066 /* Easy */,
 				414EE7AF22CA2E7F00B08066 /* Medium */,
@@ -93,8 +98,17 @@
 			children = (
 				414EE7B122CA2E9A00B08066 /* SymmetricTree.swift */,
 				414EE7B422CAEDBE00B08066 /* MaximumDepthOfBinaryTree.swift */,
+				414EE7B822CAFB4C00B08066 /* BinaryTreeLevelOrderTraversalII.swift */,
 			);
 			path = Easy;
+			sourceTree = "<group>";
+		};
+		415FA385230EB3820077F878 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				415FA388230EB3D10077F878 /* LinkedList.swift */,
+			);
+			path = LinkedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +187,8 @@
 				414EE7B522CAEDBE00B08066 /* MaximumDepthOfBinaryTree.swift in Sources */,
 				414EE7B722CAEDF500B08066 /* TreeNode.swift in Sources */,
 				414EE79D22CA2DC400B08066 /* AppDelegate.swift in Sources */,
+				415FA389230EB3D10077F878 /* LinkedList.swift in Sources */,
+				414EE7B922CAFB4C00B08066 /* BinaryTreeLevelOrderTraversalII.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
