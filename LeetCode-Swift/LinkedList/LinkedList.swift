@@ -9,15 +9,7 @@
 
 import UIKit
 
-struct MediaDataStruct:Equatable {
-    var dataOffset:Int64 = 0    // 偏移量
-    var dataLength:Int64 = 0    // 数据长度
-    static func == (lhs: MediaDataStruct, rhs: MediaDataStruct) -> Bool {
-        return lhs.dataOffset == rhs.dataOffset && lhs.dataLength == rhs.dataLength
-    }
-}
-
-class ListNode<T> {
+class ListNode<T:Equatable> {
     var value: T?
     weak var previous: ListNode?
     var next: ListNode?
@@ -28,7 +20,7 @@ class ListNode<T> {
     }
 }
 
-class LinkList<T> {
+class LinkList<T:Equatable> {
     
     typealias Node = ListNode<T>
     
@@ -63,7 +55,6 @@ class LinkList<T> {
 
 // 双向链表(非循环链表) Head不计数
 
-
 extension LinkList {
     
     func printListNodesValue() {
@@ -75,7 +66,7 @@ extension LinkList {
     }
     
     // 正序查找结点
-    func queryNode(at index: Int) -> Node? {
+    func query(at index: Int) -> Node? {
         guard var node = head, index >= 0 else { return nil }
         var cut = 0
         while let next = node.next {
@@ -88,7 +79,7 @@ extension LinkList {
         return nil
     }
     // 倒序查找结点, 双指针查找
-    func revertQueryNode(at index: Int) -> Node? {
+    func revertQuery(at index: Int) -> Node? {
         guard var front = head, var behind = head else { return nil }
         var cut = 0
         while let next = front.next {
@@ -102,7 +93,7 @@ extension LinkList {
     }
     
     // 增加结点
-    func add(_ value: T) {
+    func append(_ value: T) {
         let newNode = Node.init(value: value)
         if let last = last {
             last.next = newNode
@@ -119,12 +110,41 @@ extension LinkList {
         var cut = 0
         let newNode = Node.init(value: value)
         while let next = node.next {
-            node = next
             if cut == index {
                 node.next?.previous = newNode
                 newNode.next = node.next
                 node.next = newNode
                 newNode.previous = node
+                break
+            }
+            node = next
+            cut += 1
+        }
+    }
+    
+    // 删除
+    func remove(_ value:T) {
+        guard var node = head else { return }
+        var cut = 0
+        while let next = node.next {
+            node = next
+            if node.value == value {
+                node.previous?.next = node.next
+                node.next?.previous = node.previous
+            }
+            cut += 1
+        }
+    }
+    
+    // 删除
+    func remove(at index:Int) {
+        guard var node = head, index >= 0 else { return }
+        var cut = 0
+        while let next = node.next {
+            node = next
+            if cut == index {
+                node.previous?.next = node.next
+                node.next?.previous = node.previous
                 break
             }
             cut += 1
