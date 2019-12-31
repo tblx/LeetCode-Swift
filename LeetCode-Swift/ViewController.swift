@@ -27,29 +27,13 @@ class ViewController: UIViewController {
         print(obj.isSymmetric(root))
         
         BinaryTreeLevelOrderTraversalII().levelOrderBottom(root)
-    }
+        
+        let stair = Dynamic_Stair()
+        print(stair.getCimbingWays(n: 2))
+        print(stair.getCimbingWays(n: 3))
+        print(stair.getCimbingWays(n: 4))
+        print(stair.getCimbingWays(n: 5))
 
-    func testNodeQuery() {
-        let list = LinkList<Any>()
-        list.head = ListNode(value: nil)
-        list.head?.next = ListNode(value: "a")
-        list.head?.next?.next = ListNode(value: "b")
-        print(list.head?.value as Any,list.head?.next?.value as Any,list.last?.value as Any)
-        
-        print(list.count)
-        
-        let node = list.queryNode(at: 2)
-        print(node?.value as Any)
-        
-        let revertNode = list.revertQueryNode(at: 2)
-        print(revertNode?.value as Any)
-        
-        list.add("d")
-        list.printListNodesValue()
-        print("\n")
-        list.insert("c", at: 2)
-        list.printListNodesValue()
-        print("\n")
     }
 }
 
