@@ -17,8 +17,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         //vertifyBinary()
         //initLinkedList()
-        LReverseList()
+        //LReverseList()
         //LReverseBinary()
+        
+        LMergeSort()
     }
     
 }
