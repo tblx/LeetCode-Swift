@@ -18,4 +18,10 @@ public class TreeNode {
         self.left = nil
         self.right = nil
     }
+    
+    func printAllNextNodeValue() {
+        print("当前节点：\(val),左节点：\(left?.val),右节点：\(right?.val)")
+        left?.printAllNextNodeValue()
+        right?.printAllNextNodeValue()
+    }
 }

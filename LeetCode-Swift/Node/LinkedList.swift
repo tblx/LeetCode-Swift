@@ -9,14 +9,30 @@
 
 import UIKit
 
-class ListNode<T:Equatable> {
-    var value: T?
+// 双向链表
+
+class ListNode<T:Equatable>:Equatable {
+    
+    var value: T
     weak var previous: ListNode?
     var next: ListNode?
-    init(value: T?) {
+    init(value: T) {
         self.value = value
         self.previous = nil
         self.next = nil
+    }
+    
+    static func == (lhs: ListNode<T>, rhs: ListNode<T>) -> Bool {
+        return lhs.value == rhs.value && lhs.previous == rhs.previous && lhs.next == rhs.next
+    }
+    
+    func printAllNextNodeValue() {
+        print(value)
+        var item = next
+        while item != nil {
+            print(item?.value)
+            item = item?.next
+        }
     }
 }
 
@@ -111,8 +127,9 @@ extension LinkList {
         let newNode = Node.init(value: value)
         while let next = node.next {
             if cut == index {
-                node.next?.previous = newNode
-                newNode.next = node.next
+                next.previous = newNode
+                newNode.next = next
+                
                 node.next = newNode
                 newNode.previous = node
                 break
