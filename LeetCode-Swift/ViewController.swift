@@ -20,7 +20,10 @@ class ViewController: UIViewController {
         //LReverseList()
         //LReverseBinary()
         
-        LMergeSort()
+        //LMergeSort()
+        //LBubbleSort()
+        //LSelectionSort()
+        LInsertionSort()
     }
     
 }
