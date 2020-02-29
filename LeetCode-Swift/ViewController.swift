@@ -24,7 +24,11 @@ class ViewController: UIViewController {
         //LBubbleSort()
         //LSelectionSort()
         //LInsertionSort()
-        LShellSort()
+        //LShellSort()
+        
+        LQuickSort()
+        
+        //LHeapSort()
     }
     
 }
