@@ -26,9 +26,9 @@ class ViewController: UIViewController {
         //LInsertionSort()
         //LShellSort()
         
-        LQuickSort()
+        //LQuickSort()
         
-        //LHeapSort()
+        LHeapSort()
     }
     
 }

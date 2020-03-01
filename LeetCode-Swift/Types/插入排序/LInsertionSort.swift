@@ -9,7 +9,9 @@
 import UIKit
 
 // 插入排序
-// 时间平均复杂度：O(n^2) 最坏复杂度:O(n^2) 最好复杂度: O(n) 空间复杂度: O(1) 稳定
+// 时间平均复杂度：O(n^2) 最坏复杂度:O(n^2) 最好复杂度: O(n)
+// 空间复杂度: O(1)
+// 类型：稳定排序
 
 class LInsertionSort: NSObject {
     override init() {
