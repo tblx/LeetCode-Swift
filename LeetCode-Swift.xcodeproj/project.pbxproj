@@ -19,6 +19,7 @@
 		414EE7B722CAEDF500B08066 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EE7B622CAEDF500B08066 /* TreeNode.swift */; };
 		414EE7B922CAFB4C00B08066 /* BinaryTreeLevelOrderTraversalII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EE7B822CAFB4C00B08066 /* BinaryTreeLevelOrderTraversalII.swift */; };
 		415FA389230EB3D10077F878 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415FA388230EB3D10077F878 /* LinkedList.swift */; };
+		504B727A241A8E580087D082 /* LBinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504B7279241A8E580087D082 /* LBinarySearch.swift */; };
 		50F37C20240416DD00F258DB /* LReverseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F37C1F240416DD00F258DB /* LReverseList.swift */; };
 		50F37C222404DF1100F258DB /* LReverseBinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F37C212404DF1100F258DB /* LReverseBinary.swift */; };
 		50F37C4A2407BB6300F258DB /* LQuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F37C492407BB6300F258DB /* LQuickSort.swift */; };
@@ -45,6 +46,7 @@
 		414EE7B622CAEDF500B08066 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		414EE7B822CAFB4C00B08066 /* BinaryTreeLevelOrderTraversalII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeLevelOrderTraversalII.swift; sourceTree = "<group>"; };
 		415FA388230EB3D10077F878 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		504B7279241A8E580087D082 /* LBinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBinarySearch.swift; sourceTree = "<group>"; };
 		50F37C1F240416DD00F258DB /* LReverseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LReverseList.swift; sourceTree = "<group>"; };
 		50F37C212404DF1100F258DB /* LReverseBinary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LReverseBinary.swift; sourceTree = "<group>"; };
 		50F37C492407BB6300F258DB /* LQuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQuickSort.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		4155B8012403CA01000AF775 /* 二分法排序 */ = {
 			isa = PBXGroup;
 			children = (
+				504B7279241A8E580087D082 /* LBinarySearch.swift */,
 			);
 			path = "二分法排序";
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				50F37C4A2407BB6300F258DB /* LQuickSort.swift in Sources */,
 				414EE7B922CAFB4C00B08066 /* BinaryTreeLevelOrderTraversalII.swift in Sources */,
 				50F37C20240416DD00F258DB /* LReverseList.swift in Sources */,
+				504B727A241A8E580087D082 /* LBinarySearch.swift in Sources */,
 				50F37C56240955F700F258DB /* LHeapSort.swift in Sources */,
 				50F37C4C2407BB9200F258DB /* LMergeSort.swift in Sources */,
 				50F37C4E2409436600F258DB /* LBubbleSort.swift in Sources */,
