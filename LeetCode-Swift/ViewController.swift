@@ -28,7 +28,13 @@ class ViewController: UIViewController {
         
         //LQuickSort()
         
-        LHeapSort()
+//        LHeapSort()
+        
+//        let result = leetcode_922Solution.sortArrayByParityII([4,2,5,7])
+//        print(result)
+        
+        let mergeResult = leetcode_56Solution.merge([[1,3],[2,6],[8,10],[15,18]])
+        print(mergeResult)
     }
     
 }

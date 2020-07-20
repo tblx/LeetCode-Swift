@@ -30,7 +30,7 @@ class ListNode<T:Equatable>:Equatable {
         print(value)
         var item = next
         while item != nil {
-            print(item?.value)
+            print(item?.value ?? "")
             item = item?.next
         }
     }
