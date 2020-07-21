@@ -30,7 +30,8 @@
 		50F37C54240955D600F258DB /* LShellSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F37C53240955D600F258DB /* LShellSort.swift */; };
 		50F37C56240955F700F258DB /* LHeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F37C55240955F700F258DB /* LHeapSort.swift */; };
 		5F182DE324C5972D00CF74F8 /* leetcode_922.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F182DE224C5972D00CF74F8 /* leetcode_922.swift */; };
-		5F182DE524C5977E00CF74F8 /* leetcode_56.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F182DE424C5977E00CF74F8 /* leetcode_56.swift */; };
+		5F77836324C71E7E00129F1B /* leetcode_56.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F77836224C71E7E00129F1B /* leetcode_56.swift */; };
+		5F77836524C71EBD00129F1B /* leetcode_75.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F77836424C71EBD00129F1B /* leetcode_75.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +60,8 @@
 		50F37C53240955D600F258DB /* LShellSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LShellSort.swift; sourceTree = "<group>"; };
 		50F37C55240955F700F258DB /* LHeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LHeapSort.swift; sourceTree = "<group>"; };
 		5F182DE224C5972D00CF74F8 /* leetcode_922.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leetcode_922.swift; sourceTree = "<group>"; };
-		5F182DE424C5977E00CF74F8 /* leetcode_56.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = leetcode_56.swift; path = "LeetCode-Swift/Easy/leetcode_56.swift"; sourceTree = SOURCE_ROOT; };
+		5F77836224C71E7E00129F1B /* leetcode_56.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leetcode_56.swift; sourceTree = "<group>"; };
+		5F77836424C71EBD00129F1B /* leetcode_75.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leetcode_75.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +127,7 @@
 			children = (
 				50F37C48240785F200F258DB /* Node */,
 				411CC92623190509001FE1A1 /* Types */,
-				414EE7B022CA2E8500B08066 /* Easy */,
-				414EE7AF22CA2E7F00B08066 /* Medium */,
-				414EE7AE22CA2E7900B08066 /* Hard */,
+				414EE7B022CA2E8500B08066 /* Leetcode */,
 				414EE79C22CA2DC400B08066 /* AppDelegate.swift */,
 				414EE79E22CA2DC400B08066 /* ViewController.swift */,
 				414EE7A022CA2DC400B08066 /* Main.storyboard */,
@@ -138,30 +138,17 @@
 			path = "LeetCode-Swift";
 			sourceTree = "<group>";
 		};
-		414EE7AE22CA2E7900B08066 /* Hard */ = {
+		414EE7B022CA2E8500B08066 /* Leetcode */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Hard;
-			sourceTree = "<group>";
-		};
-		414EE7AF22CA2E7F00B08066 /* Medium */ = {
-			isa = PBXGroup;
-			children = (
-				5F182DE424C5977E00CF74F8 /* leetcode_56.swift */,
-			);
-			path = Medium;
-			sourceTree = "<group>";
-		};
-		414EE7B022CA2E8500B08066 /* Easy */ = {
-			isa = PBXGroup;
-			children = (
+				5F77836224C71E7E00129F1B /* leetcode_56.swift */,
 				414EE7B122CA2E9A00B08066 /* SymmetricTree.swift */,
 				414EE7B422CAEDBE00B08066 /* MaximumDepthOfBinaryTree.swift */,
 				414EE7B822CAFB4C00B08066 /* BinaryTreeLevelOrderTraversalII.swift */,
 				5F182DE224C5972D00CF74F8 /* leetcode_922.swift */,
+				5F77836424C71EBD00129F1B /* leetcode_75.swift */,
 			);
-			path = Easy;
+			path = Leetcode;
 			sourceTree = "<group>";
 		};
 		4155B7FB2403C9D5000AF775 /* 树 */ = {
@@ -356,7 +343,7 @@
 				414EE7B222CA2E9A00B08066 /* SymmetricTree.swift in Sources */,
 				414EE79F22CA2DC400B08066 /* ViewController.swift in Sources */,
 				50F37C52240955C500F258DB /* LInsertionSort.swift in Sources */,
-				5F182DE524C5977E00CF74F8 /* leetcode_56.swift in Sources */,
+				5F77836324C71E7E00129F1B /* leetcode_56.swift in Sources */,
 				414EE7B522CAEDBE00B08066 /* MaximumDepthOfBinaryTree.swift in Sources */,
 				411CC92B23190960001FE1A1 /* Dynamic-Stair.swift in Sources */,
 				50F37C222404DF1100F258DB /* LReverseBinary.swift in Sources */,
@@ -365,6 +352,7 @@
 				414EE79D22CA2DC400B08066 /* AppDelegate.swift in Sources */,
 				415FA389230EB3D10077F878 /* LinkedList.swift in Sources */,
 				50F37C4A2407BB6300F258DB /* LQuickSort.swift in Sources */,
+				5F77836524C71EBD00129F1B /* leetcode_75.swift in Sources */,
 				414EE7B922CAFB4C00B08066 /* BinaryTreeLevelOrderTraversalII.swift in Sources */,
 				50F37C20240416DD00F258DB /* LReverseList.swift in Sources */,
 				504B727A241A8E580087D082 /* LBinarySearch.swift in Sources */,
