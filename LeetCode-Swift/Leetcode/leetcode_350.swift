@@ -9,29 +9,29 @@
 import Foundation
 
 class leetcode_350Solution {
-    class func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+    func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         
         let sortNums1 = nums1.sorted()
         let sortNums2 = nums2.sorted()
         
-        var result:[Int] = []
-        
         var itemIndex = 0
-        if nums1.count > sortNums2.count {
-            for (index, item) in sortNums2.enumerated() {
-                if sortNums1[itemIndex...].contains(item) {
+        var result:[Int] = []        
+        if sortNums1.count > sortNums2.count {
+            for item in sortNums2 {
+                if let searchIndex = sortNums1[itemIndex...].firstIndex(of: item) {
                     result.append(item)
-                    itemIndex = index + 1
+                    itemIndex = searchIndex + 1
                 }
             }
         }else {
-            for (index, item) in sortNums1.enumerated() {
-                if sortNums2[itemIndex...].contains(item) {
+            for item in sortNums1 {
+                if let searchIndex = sortNums2[itemIndex...].firstIndex(of: item) {
                     result.append(item)
-                    itemIndex = index + 1
+                    itemIndex = searchIndex + 1
                 }
             }
         }
+        
         return result
     }
 }
