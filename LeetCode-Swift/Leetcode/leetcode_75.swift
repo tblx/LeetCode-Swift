@@ -13,7 +13,24 @@ import Foundation
  */
 
 class leetcode_75Solution {
-    func sortColors(_ nums: inout [Int]) {
+    class func sortColors(_ nums: inout [Int]) {
         
+        var current = 0
+        var preIndex = 0
+        var lastIndex = nums.count - 1
+        
+        while current <= lastIndex {
+            let item = nums[current]
+            if item == 0 {
+                nums.swapAt(preIndex, current)
+                preIndex += 1
+                current += 1
+            }else if item == 2 {
+                nums.swapAt(lastIndex, current)
+                lastIndex -= 1;
+            }else {
+                current += 1
+            }
+        }
     }
 }
