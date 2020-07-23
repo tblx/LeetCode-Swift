@@ -33,8 +33,10 @@ class ViewController: UIViewController {
 //        let result = leetcode_922Solution.sortArrayByParityII([4,2,5,7])
 //        print(result)
         
-        let mergeResult = leetcode_56Solution.merge([[1,3],[2,6],[8,10],[15,18]])
-        print(mergeResult)
+//        let mergeResult = leetcode_56Solution.merge([[1,3],[2,6],[8,10],[15,18]])
+        //        print(mergeResult)
+
+        print(leetcode_350Solution.intersection([-2147483648,1,2,3], [1,-2147483648,-2147483648]))
     }
     
 }
